@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetodo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="help">
+    <header class="clearfix">
+        <nav class="nav">
+            <p><a href="index.html">go back</a></p>
+        </nav>
+    </header>
+<!-- コンテンツ -->
+    <div id="container">
+        <div id="top-container" class="clearfix">
+            <div class="help-container">
+                <h1>Planetodo</h1>
+                <p>惑星と太陽系をイメージした、タイマー・タスク管理アプリです。<br>
+                    ポモドーロテクニック(※1)を踏襲し、<br>
+                    1セットを地球の公転1周にたとえて表現しました。<br>
+                    <ul>
+                        <li>作業時間・休憩時間を設定できるタイマー機能(※2)</li>
+                        <li>タスクリスト機能</li>
+                    </ul>
+                    から構成されています。
+                </p>
+                <p class="attention">
+                    ※1 ポモドーロテクニック<br>
+                    作業時間と休憩時間を合わせたセットを1単位(1ポモドーロ)としてタスクを行う手法。作業時間中は集中を切らさないこと、セット中はタスクの内容を変えないことが鉄則。<br>
+                    作業時間25分が目安とされるが、集中力の続く時間であれば長さは自由。<br>
+                    <br>
+                    ※2<br>
+                    テスト・審査のため、本来ではあり得ない短さの時間の選択肢を故意に複数入れています。
+                </p>
+
+                <h3>Timer</h3>
+                <p>タイマーの盤面です。
+                <table>
+                    <tr>
+                        <td>作業時間・休憩時間</td>
+                        <td>2色の太い円周</td>
+                    </tr>
+                    <tr>
+                        <td>選択中のタスクなど</td>
+                        <td>文字</td>
+                    </tr>
+                    <tr>
+                        <td>現在時点</td>
+                        <td>白い小円(地球)</td>
+                    </tr>
+                    <tr>
+                        <td>経過時間</td>
+                        <td>白い細い軌道(公転軌道)</td>
+                    </tr>
+                    <tr>
+                        <td>現在の周回数</td>
+                        <td>黄色円(太陽)の数字</td>
+                    </tr>
+                </table>
+                で表します。</p>
+
+                <h3>Settings</h3>
+                <p>
+                    作業時間(Work period)・休憩時間(Break period)を設定します。<br>
+                    作業 + 休憩で1セット = 公転1周 = 1 Orbit とし、<br>
+                    その時間配分を選ぶことでTimerに時間配分を表す盤面が表示されます。<br>
+                    (※2 参照)
+                </p>
+                
+                <h3>Status</h3>
+                <p>
+                    タイマー作動後に現在の状況を、<br>
+                    「WORK」「BREAK」「FINISHED!」<br>
+                    のいずれかで表示します。
+                </p>
+
+                <h3>Switch</h3>
+                <p>
+                    タイマーのスイッチです。<br>
+                    タスクの選択・時間配分の選択が揃った状態で【start】を押すと、<br>
+                    時間の計測が始まります。<br>
+                    【restart】で時間の測りなおし、<br>
+                    【reset】でその周のタイマーをリセットします。<br>
+                    スタート時・休憩開始時・タイマー終了時に通知音が鳴ります。
+                </p>
+
+                <h3>Todo List</h3>
+                <p>
+                    やるべきタスクのリストです。<br>
+                    テキストボックスに入力して【Add】または Enter押下で、<br>
+                    タスクをTodo Listに追加します。<br>
+                    これから取り組むタスクを select欄のラジオボタンで選択します。<br>
+                    【delete】で削除、【done】でDone Listへ追加、<br>【keep】でKeep Listへ追加することができます。
+                </p>
+
+                <h3>Done List</h3>
+                <p>
+                    作業を終え、Todo Listから移動したタスクのリストです。<br>
+                    Orbit は終えたセット数、<br>
+                    Total worked min は合計作業時間(分)を表します。<br>
+                    Done Listに追加されたタスクや合計作業時間などは<br>成果としてツイートすることができます。
+                </p>
+
+                <h3>Keep List</h3>
+                <p>
+                    Todo Listによく追加するタスクを保存しておくためのリストです。<br>
+                    Todo ListやDone Listから【keep】でkeep Listに入れて保存、<br>
+                    【Todo】でTodo Listへの再追加ができます。<br>
+                    ほとんどの内容は更新ボタンでクリアされますが、Keep Listに加えておくと
+                    次回以降も自動でリロードされ、簡単にTodo Listに加えることができます。<br>
+                    【clear】でKeep Listの内容を全削除します。<br>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <small>-&nbsp;&nbsp;planetodo&nbsp;&nbsp;-</small>
+    </footer>
+<!-- コンテンツ終わり -->
+<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
