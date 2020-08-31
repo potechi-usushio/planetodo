@@ -207,12 +207,12 @@ tr{
 #help td{
     font-size: 16px;
     text-align: left;
+    padding-right: 15px;
 }
 .attention {
     font-size: 13px;
     color: #c0c0c0;
 }
-
 footer{
     text-align: center;
     color: #c0c0c0;
