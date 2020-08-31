@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetodo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="help">
+<!-- コンテンツ -->
+    <div id="container">
+        <nav class="nav">
+            <p><a href="index.html">back</a></p>
+        </nav>
+        <div id="top-container" class="clearfix">
+            <div class="help-container">
+                <h1>Planetodo</h1>
+                <p>惑星と太陽系をイメージした、タイマー・タスク管理アプリです。<br>
+                    ポモドーロテクニック(※)を踏襲し、<br>
+                    1セットを地球の公転1周に模しました。<br>
+                    作業時間・休憩時間を設定できるタイマー機能、タスクリスト機能から構成されています。<br>
+                </p>
+                <p class="attention"> ※ ポモドーロテクニック<br>
+                    作業時間と休憩時間を合わせたセットを1単位(1ポモドーロ)としてタスクを行う手法。作業時間中は集中を切らさないこと、セット中はタスクの内容を変えないことが鉄則。<br>
+                    作業時間25分が目安とされるが、集中力の続く時間であれば長さは自由。<br>
+                </p>
+
+                <h3>Timer</h3>
+                <table>
+                    <tr>
+                        <td>作業時間・休憩時間</td>
+                        <td>2色の太い円周</td>
+                    </tr>
+                    <tr>
+                        <td>選択中のタスクなど</td>
+                        <td>文字</td>
+                    </tr>
+                    <tr>
+                        <td>現在時点</td>
+                        <td>白い小円(地球)</td>
+                    </tr>
+                    <tr>
+                        <td>経過時間</td>
+                        <td>白い細い軌道(公転軌道)</td>
+                    </tr>
+                    <tr>
+                        <td>現在の周回数</td>
+                        <td>黄色円(太陽)の数字</td>
+                    </tr>
+                </table>
+                <p>で表します。</p>
+
+                <h3>Settings</h3>
+                <p>
+                    時間の設定と計測・セット数のカウントができます。<br>
+                    作業 + 休憩で1セット( = 公転1周)とし、その時間配分を選ぶことで各時間が色分けされて表示されます。
+                </p>
+                
+                <h3>Status</h3>
+                <p>
+                    タイマー作動後に現在の状況を<br>WORK / BREAK / FINISHED! <br>のいずれかで表示します。
+                </p>
+
+                <h3>Switch</h3>
+                <p>タスクの選択・時間配分の選択が揃って【start】すると、時間の計測が始ります。<br>
+                【restart】で時間の測りなおし、<br>
+                【reset】でその周のタイマーをリセットします。<br>
+                スタート時・休憩開始時・タイマー終了時に通知音が鳴ります。</p>
+
+                <h3>Todo List</h3>
+                <p>Todo List内テキストボックスに入力して【Add】または Enter でタスクをTodo Listに追加します。<br>これから取り組むタスクを select欄のラジオボタンで選択します。</p>
+
+                <h3>Done List</h3>
+                <p>Todo Listで終わったタスクは【Done】でDone Listに移動します。<br>
+                revolution は終えたセット数、<br>
+                total work min は合計作業時間(分)です。<br>
+                Done Listに追加されたタスクや合計作業時間などは成果としてツイートすることができます。</p>
+
+                <h3>Keep List</h3>
+                <p>頻繁にTodo Listに追加するタスクはkeep Listに入れて保存・【Todo】でTodo Listへの再追加ができます。<br>
+                ほとんどの内容は更新ボタンでクリアされますが、Keep Listに加えておくと次回以降もリロードされ、簡単にTodo Listに加えることができます。<br>
+                【clear】でKeep Listの内容を削除します。
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <small>-&nbsp;&nbsp;planetodo&nbsp;&nbsp;-</small>
+    </footer>
+<!-- コンテンツ終わり -->
+<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

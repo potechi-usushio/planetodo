@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+body{
+    background-color: rgb(20, 11, 69);
+    color: #f8f8ff;
+    margin: 30px;
+    font-family: 'Bitter', serif;
+    font-weight: 300;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#container{
+    width: 960px;
+    margin: 0 auto 150px;
+}
+#top-container{
+    width: 940px;
+    margin: 0 auto;
+}
+#bottom-container{
+    width: 940px;
+    margin: 10px auto;
+}
+
+h1 {
+    font-family: 'Bitter', serif;
+    font-weight: 300;
+    font-size: 50px;
+}
+h2{
+    font-family: 'Bitter', serif;
+    font-weight: 600;
+    font-size: 32px;
+    border-left: 6px #f8f8ff solid;
+    border-bottom: 1px #f8f8ff solid;
+    padding-left: 12px;
+}
+h3 {
+    font-family: 'Bitter', serif;
+    font-weight: 500;
+    font-size: 25px;
+    border-left: 5px #f8f8ff solid;
+    padding-left: 8px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+p{
+    font-size: 18px;
+    margin: 7px 0;
+    line-height: 1.5;
+}
+
+/* top-container */
+/* Timer */
+.layer1 {
+    position: relative;
+}
+.layer2, .layer3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#timer-wrapper{
+    width: 410px;
+    margin: 0;
+}
+#timer-area{
+    float: left;
+}
+
+/* setting - status - switch */
+#sss-wrapper{
+    width: 210px;
+    margin: 0;
+    float: left;
+}
+#sss-area{
+    width: 148px;
+    margin: 0 auto;
+}
+#work-area{
+    margin-bottom: 5px;
+    border-left: 3px rgb(149, 54, 249) solid;
+    padding-left: 7px;
+}
+#break-area{
+    margin-bottom: 5px;
+    border-left: 3px rgb(119, 216, 198) solid;
+    padding-left: 7px;
+}
+#setting-area form{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#status-area {
+    height: 120px;
+    margin-bottom: 25px;
+}
+#currentStatus-area{
+    font-weight: 400;
+}
+.inner-box {
+    padding-left: 10px;
+}
+
+/* Keep List */
+#keep-wrapper {
+    width: 320px;
+    margin: 0;
+    float: left;
+}
+#keep-area {
+    float: left;
+    margin-left: 5px;
+}
+#keepClear-btn {
+    float: right;
+    margin-right: 8px;
+}
+#keep-list {
+    border-bottom: 1px rgba(255,255,255,0.5) solid;
+    margin-bottom: 10px;
+}
+
+
+/* bottom-container */
+#todo-wrapper {
+    width: 530px;
+    margin: 0;
+}
+#todo-area{
+    width: 520px;
+    float: left;
+    margin-left: 5px;
+}
+#done-wrapper {
+    width: 410px;
+    margin: 0;
+    float: left;
+}
+#done-area{
+    width: 390px;
+    float: left;
+    margin-left: 20px;
+}
+#done-list{
+    border-bottom: 1px rgba(255,255,255,0.5) solid;
+    margin-bottom: 10px;
+}
+.name-th{
+    font-weight:6400;
+    width: 150px;
+    background-color: rgba(255,255,255,0.5);
+    color:rgb(20, 11, 69);
+}
+.select-th{
+    font-weight: 600;
+    width: 50px;
+    background-color: rgba(255,255,255,0.5);
+    color:rgb(20, 11, 69);
+}
+.btn-th{
+    font-weight: 300;
+    width: 60px;
+}
+table{
+    margin: 20px 0;
+}
+th{
+    height: 20px;
+    font-size: 15px;
+}
+tr{
+    text-align: center;
+    font-size: 18px;
+}
+#taskForm {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+#tweet-area {
+    margin-top: 20px;
+}
+
+.nav{
+    float: right;
+}
+.help-container{
+    width: 600px;
+    margin: 0 auto;
+}
+.attention {
+    font-size: 13px;
+    color: #c0c0c0;
+}
+
+footer{
+    text-align: center;
+    color: #c0c0c0;
+}
